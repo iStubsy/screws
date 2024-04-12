@@ -2,10 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    height: 2000px;
+    font-family: arial;
 }
 
 .filterTab {
@@ -13,6 +10,11 @@ body {
     background-color: #efefef;
     padding: 5px;
     gap: 5px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .filter {
@@ -32,8 +34,6 @@ body {
     justify-content: center;
 }
 
-
-
 button {
     width: 100%;
     height: 100%;
@@ -41,7 +41,6 @@ button {
     border: solid 1px #b4b4b4;
     color: black;
 }
-
 
 .droppy {
     margin: 0 auto;
@@ -58,13 +57,16 @@ button {
 .row {
     display: flex;
     font-size: 0.8rem;
-    padding: 5px;
+    padding: 4px 10px;
 }
 
 .headRow {
     position: sticky;
     top: 0;
-    background-color: beige;
+    background-color: #e8e8e8;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+    margin-bottom: 10px;
 }
 
 .typ,
@@ -79,7 +81,7 @@ button {
 }
 
 .typ {
-    width: 20%;
+    width: 22%;
 }
 
 .diameter {
@@ -87,7 +89,7 @@ button {
 }
 
 .laenge {
-    width: 15%;
+    width: 14%;
 }
 
 .head {
