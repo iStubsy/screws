@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mobile.css" />
+    <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schraubenlager</title>
+</head>
+
+<body>
+    <div id="everything">
+        <!-- <input type="text" placeholder="Was brauchst du?" id="textField" oninput="textChangeFunc()">-->
+
+        <div id="post">
+            <div class="filterTab">
+                <div class="filter">
+                    <div class="filter-name">Durchmesser</div>
+                    <select id="dropdownDiameter" class="droppy">
+                        <option value="option1">Alle</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <div class="filter-name">Typ</div>
+                    <select id="dropdownTyp" class="droppy">
+                        <option value="option1">Alle</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <div class="filter-name">Länge</div>
+                    <select id="dropdownLaenge" class="droppy">
+                        <option value="option1">Alle</option>
+                    </select>
+                </div>
+                <div class="filterButton">
+                    <button id="filterResetButton" onclick="changeSelection()">reset</button>
+                </div>
+            </div>
+            <div class="row headRow">
+                <div class="typ">Typ</div>
+                <div class="diameter">Ø</div>
+                <div class="laenge">Länge</div>
+                <div class="head">Kopf</div>
+                <div class="tool">Werkzeug</div>
+                <div class="material">Werkstoff</div>
+                <div class="location">Ort</div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

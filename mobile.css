@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+.filterTab {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+.filter {
+    width: 50%;
+    padding: 5px;
+}
+
+.filterButton {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.droppy {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.headRow {
+    position: sticky;
+    top: 0;
+    background-color: beige;
+}
+
+.typ,
+.diameter,
+.laenge,
+.head,
+.tool,
+.material,
+.location {
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.typ {
+    width: 20%;
+}
+
+.diameter {
+    width: 10%;
+}
+
+.laenge {
+    width: 15%;
+}
+
+.head {
+    width: 25%;
+}
+
+.tool {
+    width: 30%;
+}
+
+.material {
+    display: none;
+}
+
+.location {
+    display: none;
+}
+
+button {
+    width: 50px;
+    height: 50px
+}
