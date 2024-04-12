@@ -10,14 +10,13 @@ body {
 
 .filterTab {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
     background-color: #efefef;
+    padding: 5px;
+    gap: 5px;
 }
 
 .filter {
     width: 50%;
-    padding: 5px;
 }
 
 .filterButton {
@@ -28,8 +27,13 @@ body {
 }
 
 .droppy {
-    width: 90%;
     margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    border: solid 1px #d8d8d8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .row {
