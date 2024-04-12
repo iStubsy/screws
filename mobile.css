@@ -30,10 +30,12 @@ body {
     margin: 0 auto;
     height: 50px;
     width: 100%;
-    border: solid 1px #d8d8d8;
+    border: solid 1px #b4b4b4;
     display: flex;
     justify-content: center;
     text-align: center;
+    border-radius: none;
+    color: black;
 }
 
 .row {
