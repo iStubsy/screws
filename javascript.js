@@ -19,6 +19,20 @@ var itemList = [
     new Item("Schraube", "M8", "16", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
     new Item("Schraube", "M3", "10", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
 
+
+    new Item("Abstandsbolzen", "M3", "10", "", "Stahl vz.", ""),
+    new Item("Abstandsbolzen", "M3", "12", "", "Stahl vz.", ""),
+    new Item("Distanzhülse", "", "", "", "", ""),
+    new Item("Einpressgewindebolzen", "M3", "10", "", "", ""),
+    new Item("Federring", "M8", "", "", "", ""),
+    new Item("Schraube", "M2,5", "12", "Linenskopf", "Kreuzschlitz", ""),
+    new Item("Mutter", "M3,5", "", "", "", ""),
+
+
+
+
+
+
     new Item("Schraube", "M6", "35", "Zylinderkopf", "Schlitz", "Stahl verzinkt"),
     new Item("Mutter", "M6", "35", "Zylinderkopf", "Schlitz", "Stahl verzinkt"),
 
@@ -28,6 +42,7 @@ var itemList = [
 console.log(Item);
 
 window.onload = function () {
+
 
     var typArray = [];
     var diameterArray = [];
@@ -49,6 +64,8 @@ window.onload = function () {
 
     // CREATING THE ITEMS
     for (var i = 0; i < itemList.length; i++) {
+
+
 
         if (!typArray.includes(itemList[i].typ)) {
             typArray.push(itemList[i].typ);
@@ -98,6 +115,7 @@ window.onload = function () {
         var position = document.createElement("div");
         position.classList.add("location");
 
+
         document.getElementById("post").appendChild(row);
 
         row.appendChild(typ);
@@ -109,7 +127,7 @@ window.onload = function () {
         row.appendChild(material);
         row.appendChild(position);
 
-
+        //document.querySelectorAll(".row")[i].classList.add("rowAppear");
 
         typ.innerHTML = itemList[i].typ;
         diameter.innerHTML = itemList[i].diameter;
@@ -125,6 +143,12 @@ window.onload = function () {
             position.innerHTML = itemList[i].position;
         }
     }
+
+    for (var x = 1; x <= itemList.length; x += 2) {
+        document.querySelectorAll(".row")[x].style.backgroundColor = "white";
+    }
+
+
 }
 
 document.getElementById('dropdownTyp').addEventListener('change', filterIt);
