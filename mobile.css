@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     font-family: arial;
+}
+
+html {
     font-size: .8rem;
 }
 
@@ -19,7 +22,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-
+    font-size: 1rem;
 }
 
 .filter {
@@ -88,26 +91,32 @@ button {
 .location {
     overflow: hidden;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .typ {
-    width: 22%;
+    width: 42%;
+    font-size: 1.2rem;
 }
 
 .diameter {
-    width: 10%;
+    width: 12%;
+    font-size: 1.2rem;
 }
 
 .laenge {
-    width: 11%;
+    width: 8%;
 }
 
 .head {
-    width: 28%;
+    width: 18%;
+    font-size: .8rem;
 }
 
 .tool {
-    width: 30%;
+    width: 20%;
+    font-size: .8rem;
 }
 
 .material {

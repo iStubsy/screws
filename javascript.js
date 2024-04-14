@@ -13,11 +13,11 @@ var itemList = [
     new Item("Schraube", "M3", "16", "Flachkopf", "Schlitz", "Stahl verzinkt", "Schraubenlager"),
     new Item("Schraube", "M3", "25", "Flachkopf", "Schlitz", "Stahl verzinkt"),
     new Item("Schraube", "M3", "25", "Linsenkopf", "Schlitz", "Stahl verzinkt"),
-    new Item("Schraube", "M6", "35", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
-    new Item("Schraube", "M8", "45", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
-    new Item("Schraube", "M8", "25", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
-    new Item("Schraube", "M8", "16", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
-    new Item("Schraube", "M3", "10", "Zylinderkopf", "innensechskant", "Stahl verzinkt"),
+    new Item("Schraube", "M6", "35", "Zylinder", "innensechskant", "Stahl verzinkt"),
+    new Item("Schraube", "M8", "45", "Zylinder", "innensechskant", "Stahl verzinkt"),
+    new Item("Schraube", "M8", "25", "Zylinder", "innensechskant", "Stahl verzinkt"),
+    new Item("Schraube", "M8", "16", "Zylinder", "innensechskant", "Stahl verzinkt"),
+    new Item("Schraube", "M3", "10", "Zylinder", "innensechskant", "Stahl verzinkt"),
 
 
     new Item("Abstandsbolzen", "M3", "10", "", "Stahl vz.", ""),
@@ -33,8 +33,8 @@ var itemList = [
 
 
 
-    new Item("Schraube", "M6", "35", "Zylinderkopf", "Schlitz", "Stahl verzinkt"),
-    new Item("Mutter", "M6", "35", "Zylinderkopf", "Schlitz", "Stahl verzinkt"),
+    new Item("Schraube", "M6", "35", "Zylinder", "Schlitz", "Stahl verzinkt"),
+    new Item("Mutter", "M6", "35", "Zylinder", "Schlitz", "Stahl verzinkt"),
 
     new Item("Gewindeschneidschrauben", "M5", "12", "", "", ""),
 ];
@@ -141,6 +141,14 @@ window.onload = function () {
             position.innerHTML = "";
         } else {
             position.innerHTML = itemList[i].position;
+        }
+    }
+
+
+    for (var j = 0; j < itemList.length; j++) {
+        if (itemList[j].typ.length > 12) {
+            document.querySelectorAll(".typ")[j + 1].style.fontSize = ".8rem";
+            //document.querySelectorAll(".row")[i].style.display = "none";
         }
     }
 
