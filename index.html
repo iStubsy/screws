@@ -14,29 +14,6 @@
         <!-- <input type="text" placeholder="Was brauchst du?" id="textField" oninput="textChangeFunc()">-->
 
         <div id="post">
-            <div class="filterTab">
-                <div class="filter">
-                    <div class="filterName">Ø</div>
-                    <select id="dropdownDiameter" class="droppy">
-                        <option value="option1">Alle</option>
-                    </select>
-                </div>
-                <div class="filter">
-                    <div class="filterName">Typ</div>
-                    <select id="dropdownTyp" class="droppy">
-                        <option value="option1">Alle</option>
-                    </select>
-                </div>
-                <div class="filter">
-                    <div class="filterName">Länge</div>
-                    <select id="dropdownLaenge" class="droppy">
-                        <option value="option1">Alle</option>
-                    </select>
-                </div>
-                <div class="filterButton">
-                    <button id="filterResetButton" onclick="changeSelection()">reset</button>
-                </div>
-            </div>
             <div class="row headRow">
                 <div class="typ">Typ</div>
                 <div class="diameter">Ø</div>
@@ -45,6 +22,30 @@
                 <div class="tool">Werkzeug</div>
                 <div class="material">Werkstoff</div>
                 <div class="location">Ort</div>
+            </div>
+
+        </div>
+        <div class="filterTab">
+            <div class="filter">
+                <div class="filterName">Ø</div>
+                <select id="dropdownDiameter" class="droppy">
+                    <option value="option1">Alle</option>
+                </select>
+            </div>
+            <div class="filter">
+                <div class="filterName">Typ</div>
+                <select id="dropdownTyp" class="droppy">
+                    <option value="option1">Alle</option>
+                </select>
+            </div>
+            <div class="filter">
+                <div class="filterName">Länge</div>
+                <select id="dropdownLaenge" class="droppy">
+                    <option value="option1">Alle</option>
+                </select>
+            </div>
+            <div class="filterButton">
+                <button id="filterResetButton" onclick="changeSelection()">reset</button>
             </div>
         </div>
     </div>
